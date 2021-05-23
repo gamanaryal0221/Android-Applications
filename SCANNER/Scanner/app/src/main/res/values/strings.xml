@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Scanner</string>
+    <string name="camera_perm_required">We require camera permission to scan</string>
+    <string name="p_allow_camera_perm">Please allow camera permission to scan</string>
+    <string name="try_to_place">Move camera and try to place QR Code inside the box</string>
+    <string name="result">Result :</string>
+    <string name="try_more">try more</string>
+    <string name="search">web search</string>
+    <string name="copy">copy</string>
+    <string name="copied">copied to the clipboard</string>
+    <string name="save">save</string>
+    <string name="give_title">Give suitable title</string>
+    <string name="no_title">title could not be null</string>
+    <string name="long_title">title is too long</string>
+    <string name="saved">saved</string>
+    <string name="smth_wrng">something went wrong</string>
+    <string name="generate_new_qr">Generate new QR</string>
+    <string name="generate">Generate</string>
+    <string name="write_smth">write something</string>
+    <string name="loading">loading …</string>
+    <string name="no_list">"All the saved data will be listed here "</string>
+    <string name="p_write_smth">please write something</string>
+    <string name="all_data">All Data</string>
+    <string name="deleted">deleted</string>
+</resources>

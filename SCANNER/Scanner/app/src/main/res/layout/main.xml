@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="ltr" />
+
+        <LinearLayout
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/black_transparent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/list_icon"
+                    style="@style/nav_style"
+                    android:src="@drawable/ic_list" />
+
+                <ImageView
+                    android:id="@+id/scan_icon"
+                    style="@style/nav_style"
+                    android:padding="11dp"
+                    android:src="@drawable/ic_scan" />
+
+                <ImageView
+                    android:id="@+id/generate_icon"
+                    style="@style/nav_style"
+                    android:src="@drawable/ic_generate" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECEEF4"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@color/black"
+                android:src="@drawable/ic_drag" />
+
+            <TextView
+                android:id="@+id/main_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/title"
+                style="@style/edittext"
+                android:hint="@string/give_title" />
+
+            <TextView style="@style/line" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="13dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView style="@style/line" />
+
+            <HorizontalScrollView
+                android:id="@+id/btn_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/btn"
+                        android:background="@drawable/red_btn"
+                        android:onClick="tryMore"
+                        android:text="@string/try_more"
+                        android:textColor="@android:color/white" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/btn"
+                        android:background="@drawable/white_btn"
+                        android:onClick="copy"
+                        android:text="@string/copy"
+                        android:textColor="@android:color/black" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/web_search"
+                        style="@style/btn"
+                        android:background="@drawable/green_btn"
+                        android:onClick="webSearch"
+                        android:text="@string/search"
+                        android:textColor="@android:color/white"
+                        android:visibility="gone" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/btn"
+                        android:background="@drawable/green_white_btn"
+                        android:onClick="proceedToSave"
+                        android:text="@string/save"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save"
+                style="@style/btn"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:background="@drawable/green_white_btn"
+                android:onClick="proceedToSave"
+                android:text="@string/save"
+                android:textColor="@android:color/black"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

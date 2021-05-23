@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="@string/notes">
+        <menu>
+            <item
+                android:id="@+id/all_note"
+                android:icon="@drawable/ic_note"
+                android:title="@string/all_notes"/>
+            <item
+                android:id="@+id/trash"
+                android:icon="@drawable/delete"
+                android:title="@string/trash" />
+        </menu>
+    </item>
+
+    <item android:title="@string/pin">
+        <menu>
+            <item
+                android:id="@+id/change"
+                android:icon="@drawable/change"
+                android:title="@string/change" />
+            <item
+                android:id="@+id/forgot"
+                android:icon="@drawable/forgot"
+                android:title="@string/forgot" />
+        </menu>
+    </item>
+
+    <item android:title="@string/database">
+        <menu>
+            <item
+                android:id="@+id/format"
+                android:icon="@drawable/format"
+                android:title="@string/format" />
+        </menu>
+    </item>
+
+</menu>

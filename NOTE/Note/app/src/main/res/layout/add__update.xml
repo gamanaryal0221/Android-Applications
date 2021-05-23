@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".add_update.Add_Update">
+
+    <include layout="@layout/top_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/add_update_textview"
+                android:text="@string/title" />
+
+            <EditText
+                android:id="@+id/title"
+                style="@style/add_update_edittext"
+                android:hint="@string/title"
+                android:inputType="text|textCapCharacters"
+                android:maxLines="2"
+                android:gravity="center_vertical"
+                android:minHeight="55dp" />
+
+            <TextView
+                style="@style/add_update_textview"
+                android:text="@string/content" />
+
+            <EditText
+                android:id="@+id/data"
+                style="@style/add_update_edittext"
+                android:hint="@string/content"
+                android:inputType="textLongMessage|textMultiLine|textCapSentences"
+                android:maxLines="10"
+                android:minHeight="180dp" />
+
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="12dp"
+                android:text="@string/encrypt_and_save"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/add_update_textview"
+                android:text="@string/add_photo"
+                android:onClick="addPhotoClicked"
+                />
+
+            <LinearLayout
+                android:id="@+id/gallerySection"
+                style="@style/add_update_image_chooser_holder"
+                android:visibility="gone"
+                android:onClick="galleryClicked">
+
+                <ImageView
+                    style="@style/sub_btn"
+                    android:src="@drawable/gallery" />
+
+                <TextView
+                    style="@style/add_update_image_chooser_textview"
+                    android:text="@string/gallery" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cameraSection"
+                style="@style/add_update_image_chooser_holder"
+                android:visibility="gone"
+                android:onClick="cameraClicked">
+
+                <ImageView
+                    style="@style/sub_btn"
+                    android:src="@drawable/camera" />
+
+                <TextView
+                    style="@style/add_update_image_chooser_textview"
+                    android:text="@string/camera" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/selectedImage"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/imageUnselector"
+                style="@style/add_update_image_chooser_holder"
+                android:visibility="gone"
+                android:onClick="unselectImage">
+
+                <ImageView
+                    android:id="@+id/unSelImage"
+                    style="@style/sub_btn"
+                    android:src="@drawable/close" />
+
+                <TextView
+                    style="@style/add_update_image_chooser_textview"
+                    android:text="@string/unsel_img"
+                    android:textColor="@color/main_red" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_UpdateBtn"
+                style="@style/add_update_btn"
+                android:onClick="addOrUpdateBtnClicked"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/singleNoteContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/single_note_design"
+        android:elevation="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/sTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="?android:attr/colorControlNormal"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/sNotifier"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:padding="2dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/sData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sTitle"
+            android:layout_marginStart="10dp"
+            android:layout_toStartOf="@id/sOpt"
+            android:layout_toEndOf="@id/sNotifier"
+            android:textColor="?android:attr/colorControlNormal"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/sOpt"
+            android:layout_width="35dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/opt" />
+    </RelativeLayout>
+
+<!--    <include-->
+<!--        android:id="@+id/adHolder"-->
+<!--        layout="@layout/native_ad_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:visibility="gone" />-->
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="big_btn_style">
+        <item name="android:layout_width">63.5dp</item>
+        <item name="android:layout_height">63.5dp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:background">@drawable/main_btn</item>
+        <item name="android:elevation">15dp</item>
+        <item name="android:hideOnContentScroll">true</item>
+        <item name="android:padding">18dp</item>
+    </style>
+</resources>

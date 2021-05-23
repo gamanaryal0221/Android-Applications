@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Note</string>
+    <string name="username_of_mail_sender">gamanaryal@gmail.com</string>
+    <string name="password_of_mail_sender">Google1stpassword</string>
+
+    <string name="loading">loading …</string>
+    <string name="no_note_error">Create new note and it will be displayed here</string>
+    <string name="no_trash_error">All the deleted note will be displayed here</string>
+    <string name="all_notes">All Notes</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="encrypt_and_save">encrypt before saving</string>
+    <string name="add_photo">Add any supplement photo</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="unsel_img">Unselect Image</string>
+    <string name="create_new_note">Create New Note</string>
+    <string name="update">Update</string>
+    <string name="edit">Edit Note</string>
+    <string name="save">Save</string>
+    <string name="no_perm">Permission is not granted</string>
+    <string name="empty_title">Title could not be empty</string>
+
+    <string name="t_add_pin">add pin</string>
+    <string name="t_change_pin">change pin</string>
+    <string name="t_add_name_email">add name email</string>
+    <string name="t_add_email_only">add email only</string>
+    <string name="t_change_name_email">change name email</string>
+    <string name="t_check_pin">check pin</string>
+    <string name="t_clean_db">clean db</string>
+
+    <string name="about_to">"You are about to "</string>
+    <string name="p_verify_pin_to_proceed">Please verify your PIN to proceed.</string>
+    <string name="p_add_pin">Please create a new pin.\nTo be able to use many functions of Note, you must create a pin and remember it.</string>
+    <string name="p_add_name_email">Please add your Name and Email\nName is for your identification.\nEmail will be used to send mail when needed</string>
+    <string name="p_change_pin">You can change your pin from here.</string>
+    <string name="p_verify_to_proceed">Please verify your PIN to proceed</string>
+    <string name="p_verify_to_change_pin">Do you really want to change your pin?\nPlease verify your current pin to proceed</string>
+    <string name="p_change_name_email">You can change your Name and/or Email from here.</string>
+    <string name="p_clean_db">It will delete all your notes from \'All Notes\' and \'Trash\'\nThis process can not be undone.\nPlease verify your Database pin if you really want to clean your database.</string>
+    <string name="p_no_email_to_proceed">Looks like you haven\'t added your Email address.\nYour email address is required to go further.\nPlease add and try again.</string>
+
+    <string name="decrypt">decrypt</string>
+    <string name="encrypt">encrypt</string>
+    <string name="move_to_trash">move to trash</string>
+    <string name="restore">restore</string>
+    <string name="delete_permanently">delete permanently</string>
+
+    <string name="invalid_pin">invalid pin</string>
+    <string name="current_pin">current pin</string>
+    <string name="master_pin">master pin</string>
+    <string name="create_pin">Create new pin (must be 4–8)</string>
+    <string name="confirm_pin">Confirm pin</string>
+    <string name="name_email_empty">Both fullname and email are empty</string>
+    <string name="your_name">Your fullname</string>
+    <string name="valid_email">Valid e-mail</string>
+    <string name="tap_to_add">Tap to add name and/or email</string>
+    <string name="not_match">pin are not matching</string>
+    <string name="re_write">Re-write the pin in confirm pin</string>
+    <string name="pin_must">pin must be 4–8 digit long</string>
+    <string name="pin_is_empty">pin is empty</string>
+    <string name="pin_must_not_empty">new pin must not be empty</string>
+    <string name="enter_pin">enter your pin</string>
+    <string name="saved">saved</string>
+    <string name="mail_received">Have you received the temporary pin sent to your email address?\nPlease use that pin for verification and feel free to do your wish.</string>
+    <string name="verify">Verify</string>
+    <string name="smth_wrong">Something went wrong</string>
+    <string name="show_original_content">Show original content</string>
+    <string name="show_history">Show all history</string>
+    <string name="refresh">refresh</string>
+    <string name="refreshing">refreshing …</string>
+    <string name="moved_to_trash">moved to trash</string>
+    <string name="restored">restored</string>
+    <string name="hide_original_content">Hide original content</string>
+    <string name="forgot_pin">forgot pin ?</string>
+    <string name="enter_email">enter your email</string>
+    <string name="enter_valid_email">please enter your valid email</string>
+    <string name="done">done</string>
+    <string name="welcome">Welcome to Noteit</string>
+    <string name="notes">Notes</string>
+    <string name="trash">Trash</string>
+    <string name="pin">Pin</string>
+    <string name="change">Change</string>
+    <string name="database">Database</string>
+    <string name="format">format</string>
+    <string name="forgot">forgot</string>
+    <string name="email_was_invalid">email not saved !! invalid !!</string>
+    <string name="no_pin_error">!!! Pin not found !!!\nCreate new pin</string>
+    <string name="resend_pin">resend pin</string>
+    <string name="alert_msg">We will send you a one time master pin in your mail.\nUsing that pin you will be able to </string>
+    <string name="format_msg"><![CDATA[is your one time master pin.<br>You can use this pin to <span style=color:Red> delete all your notes </span> from the database from <span style=\"color:blue\"><b>Note</b></span>.<br><br><span style=\"color:red\">NOTE:-<br>- You must do this without closing the recently opened bottom sheet.<br>- This process can not be undone<br>- It will delete all your notes from \'All Notes\' and \'Trash\'</span>]]></string>
+    <string name="forgot_msg"><![CDATA[is new one time master pin.<br>You can use this pin to change your Actual PIN in <span style=\"color:blue\"><b>Note</b></span>.<br><br><span style=\"color:red\">NOTE:- You must do this without closing the recently opened bottom sheet.</span>]]></string>
+    <string name="msg_to_name"><![CDATA["  If <span style=\"color:green\"><b>YES</b></span>, Please read the instructions carefully.<br>  If <span style=\"color:red\"><b>NO</b></span>, please ignore this.<br><br>"]]></string>
+    <string name="msg_to_unknown"><![CDATA[If <span style=\"color:green\"><b>this mail is of your concern</b></span> then, Please read the instructions carefully.<br>If <span style=\"color:red\"><b>NO</b></span>, please ignore this.<br><br>]]></string>
+    <string name="format_pin_sent">Pin is sent to you\nUse that to format the database</string>
+    <string name="forgot_pin_sent">Recovery pin is sent to you\nUse that pin to create new pin</string>
+    <string name="t_forgot_pin">forgot_pin</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="my_description">developed by Gaman Aryal</string>
+    <string name="all_history">All History</string>
+
+</resources>

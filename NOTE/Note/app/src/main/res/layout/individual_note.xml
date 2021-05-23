@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".single.Single_Note">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D6DEED"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:elevation="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:padding="3dp"
+                android:src="@drawable/back"
+                app:tint="?attr/colorControlNormal"
+                android:onClick="moveBack"/>
+
+            <ImageView
+                android:id="@+id/Share"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_toStartOf="@id/Opt"
+                android:padding="5dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_share"
+                app:tint="?attr/colorControlNormal"
+                android:onClick="shareNote"/>
+
+            <ImageView
+                android:id="@+id/Opt"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:padding="3dp"
+                android:src="@drawable/opt"
+                app:tint="?attr/colorControlNormal"
+                android:onClick="showNoteOptions"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            >
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_blue"
+                android:textSize="22sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/purple_200"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/showOriginal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/show_original_content"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:onClick="showOriginalData"/>
+
+                <TextView
+                    android:id="@+id/showHistory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/show_history"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:onClick="showHistory"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/purple_200"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#52F1EAEA">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/Image"
+                    android:layout_width="match_parent"
+                    android:padding="2dp"
+                    android:layout_height="300dp"
+                    android:visibility="gone"
+                    android:background="@color/black_transparent"/>
+
+                <TextView
+                    android:id="@+id/Content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:padding="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noteOpt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:visibility="gone">
+
+        <ImageView
+            style="@style/big_btn_style"
+            android:src="@drawable/delete"
+            android:layout_weight="1"
+            android:backgroundTint="@color/main_red"
+            android:onClick="deleteNote"
+            app:tint="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/multipleUseBtn"
+            style="@style/big_btn_style"
+            android:layout_weight="1"
+            app:tint="@color/white"
+            android:onClick="editOrRestoreNote"/>
+    </LinearLayout>
+
+</RelativeLayout>
